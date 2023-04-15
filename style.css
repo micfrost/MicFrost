@@ -1,5 +1,5 @@
 body {
-  font-family: Montserrat, Raleway, sans-serif;
+  font-family: Montserrat, sans-serif;
   margin: 0;
 }
 
@@ -106,7 +106,17 @@ h5 {
 
 a:link {
   color: #1f2c46;
+  
 }
+
+a:visited { color: #1f2c46;}
+
+footer a:link {
+  color: #f4f4f4; text-decoration: none;
+}
+
+a:visited { color: #f4f4f4;}
+
 
 section {
   text-align: center;
@@ -306,9 +316,6 @@ hr {
   width: 95%;
 }
 
-.design {
-  border: 1px solid white;
-}
 
 /* CSS Rules for design.html */
 
@@ -316,6 +323,8 @@ hr {
   color: #1f2c46;
   padding: 1rem;
 }
+
+
 
 #design img {
   border: 5px solid #1f2c46;
@@ -334,6 +343,8 @@ hr {
 #design h3 a:hover {
   text-decoration: underline;
 }
+
+
 
 /* MEDIA QUERY */
 
