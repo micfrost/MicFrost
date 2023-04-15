@@ -161,7 +161,6 @@ h5 {
   flex-wrap: wrap;
 }
 
-
 .column-single {
   text-align: center;
 }
@@ -169,7 +168,7 @@ h5 {
 .about-column {
   text-align: left;
   width: 45%;
-  
+
   margin-left: auto;
   margin-right: auto;
   padding: 5px 10px;
@@ -177,7 +176,7 @@ h5 {
 
 .skills-column {
   text-align: center;
-  
+
   margin-left: auto;
   margin-right: auto;
   padding: 5px 10px;
@@ -307,10 +306,41 @@ hr {
   width: 95%;
 }
 
+.design {
+  border: 1px solid white;
+}
+
+/* CSS Rules for design.html */
+
+#design {
+  color: #1f2c46;
+  padding: 1rem;
+}
+
+#design img {
+  border: 5px solid #1f2c46;
+  width: 95%;
+  max-width: 800px;
+}
+
+#design h1, #design h3 {
+  text-align: left;
+}
+
+#design h3 a {
+  text-decoration: none;
+}
+
+#design h3 a:hover {
+  text-decoration: underline;
+}
+
+/* MEDIA QUERY */
+
+/* TABLET */
 
 @media screen and (max-width: 800px) {
-  
- #About .row-with-columns {
+  #About .row-with-columns {
     flex-flow: column;
   }
 
@@ -318,6 +348,8 @@ hr {
     width: 90%;
   }
 }
+
+/* MOBILE */
 
 @media screen and (max-width: 600px) {
   nav a {
@@ -330,9 +362,7 @@ hr {
     flex-flow: column;
   }
 
-  .about-column,
-   {
+  .about-column {
     width: 90%;
   }
 }
-
