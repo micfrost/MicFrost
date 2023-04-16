@@ -106,17 +106,20 @@ h5 {
 
 a:link {
   color: #1f2c46;
-  
 }
 
-a:visited { color: #1f2c46;}
+a:visited {
+  color: #1f2c46;
+}
 
 footer a:link {
-  color: #f4f4f4; text-decoration: none;
+  color: #f4f4f4;
+  text-decoration: none;
 }
 
-a:visited { color: #f4f4f4;}
-
+a:visited {
+  color: #f4f4f4;
+}
 
 section {
   text-align: center;
@@ -185,14 +188,24 @@ h5 {
 }
 
 .skills-column {
+  background-color: hsl(37, 98%, 63%);
+  border-radius: 10px;
   text-align: center;
-
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
   margin-left: auto;
   margin-right: auto;
   padding: 5px 10px;
+  width: 220px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .projects-column {
+  background-color: hsl(0, 0%, 95%);
+  border-radius: 10px;
   text-align: center;
   width: 250px;
   margin-left: auto;
@@ -313,9 +326,10 @@ button:hover {
 hr {
   border-color: #1f2c46;
   border-width: 0.5px;
-  width: 95%;
+  width: 98%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
-
 
 /* CSS Rules for design.html */
 
@@ -324,15 +338,14 @@ hr {
   padding: 1rem;
 }
 
-
-
 #design img {
   border: 5px solid #1f2c46;
   width: 95%;
   max-width: 800px;
 }
 
-#design h1, #design h3 {
+#design h1,
+#design h3 {
   text-align: left;
 }
 
@@ -343,8 +356,6 @@ hr {
 #design h3 a:hover {
   text-decoration: underline;
 }
-
-
 
 /* MEDIA QUERY */
 
