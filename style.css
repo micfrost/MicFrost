@@ -1,3 +1,9 @@
+/* Solution for sticky navbar to avoid overlapping  */
+html {
+  scroll-padding-top: 70px;
+}
+/* General Rules */
+
 body {
   font-family: Montserrat, sans-serif;
   margin: 0;
@@ -9,122 +15,24 @@ body {
   margin-right: auto;
 }
 
-.nav-icons {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.nav-icons img {
-  height: 22px;
-  justify-items: baseline;
-  margin-left: 1rem;
-  margin-right: 1rem;
-  padding: 0.2rem;
-  border: #1f2c46 1.6px solid;
-  border-radius: 10px;
-}
-
-.nav-icons img:hover {
-  border: #f4f4f4 1.6px solid;
-  border-radius: 10px;
-  transition: 0.5s;
-}
-
-.navigation {
-  display: flex;
-  justify-content: space-between;
-  padding-inline-start: 0;
-}
-
-.asp {
-  display: flex;
-  /* padding-left: 2rem; */
-}
-
-.navigation li {
-  list-style-type: none;
-}
-
-nav ul {
-  padding-inline-start: 0px;
-  /* margin-top: .7rem; */
-}
-
-nav {
-  background-color: #1f2c46;
-
-  /* text-align: center; */
-  /* padding-top: 0.5rem;
-  padding-bottom: 0.5rem; */
-
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1;
-}
-
-nav > div > ul > li > a {
-  /* border: 1px solid; */
-  padding: 0.21rem 1rem;
-  /* margin: 2px; */
-  font-size: 1.1rem;
-  color: #f4f4f4;
-  font-weight: 300;
-  text-decoration: none;
-  border-radius: 1rem;
-  border: #1f2c46 1.6px solid;
-  /* border: 1px solid white; */
-  /* transition: .5s; */
-}
-
-nav > div > ul > li > a:hover {
-  /* background-color: #f4f4f4; */
-  border: #f4f4f4 1.6px solid;
-  border-radius: 1rem;
-  transition: 0.5s;
-  /* font-weight: 400; */
-}
-
-.white {
-  font-weight: 600;
-  background-color: #f4f4f4;
-}
-
-#About ul {
-  padding-inline-start: 20px;
-}
-
-p,
-li,
-h5 {
-  font-size: 1rem;
-  line-height: 1.4;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-}
-
-a:link {
-  color: #1f2c46;
-}
-
-a:visited {
-  color: #1f2c46;
-}
-
-footer a:link {
-  color: #f4f4f4;
-  text-decoration: none;
-}
-
-a:visited {
-  color: #f4f4f4;
-}
-
 section {
   text-align: center;
   padding: 1rem;
   min-height: 100vh;
+}
+
+.white {
+  font-weight: 600;
+  background-color: rgb(244, 244, 244);
+}
+.gold {
+  font-weight: 600;
+  background-color: hsl(37, 98%, 83%);
+}
+
+.navy {
+  font-weight: 600;
+  background-color: hsl(221, 38%, 80%);
 }
 
 h1 {
@@ -138,7 +46,7 @@ h1 {
 }
 
 h2 {
-  margin-top: 4rem;
+  margin-top: 1rem;
   text-align: center;
   font-size: 2.5rem;
   font-weight: 500;
@@ -174,61 +82,109 @@ h5 {
   flex-wrap: wrap;
 }
 
-.column-single {
-  text-align: center;
-}
-
-.about-column {
-  text-align: left;
-  width: 45%;
-
-  margin-left: auto;
-  margin-right: auto;
-  padding: 5px 10px;
-}
-
-.skills-column {
-  background-color: hsl(37, 98%, 63%);
-  border-radius: 10px;
-  text-align: center;
+p,
+li,
+h5 {
+  font-size: 1rem;
+  line-height: 1.4;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 5px 10px;
-  width: 220px;
+}
 
+a:link {
+  color: #1f2c46;
+}
+
+a:visited {
+  color: #1f2c46;
+}
+
+hr {
+  border-color: #1f2c46;
+  border-width: 0.5px;
+  width: 98%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Navbar */
+
+nav {
+  background-color: #1f2c46;
+
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.nav-icons {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.projects-column {
-  background-color: hsl(0, 0%, 95%);
-  border-radius: 10px;
-  text-align: center;
-  width: 250px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0px 20px;
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  padding-inline-start: 0;
 }
 
-.projects-column:hover {
-  transform: scale(1.05);
+.asp {
+  display: flex;
+  /* padding-left: 2rem; */
+}
+
+.navigation li {
+  list-style-type: none;
+}
+
+nav ul {
+  padding-inline-start: 0px;
+}
+
+nav li a {
+  padding: 0.21rem 1rem;
+  font-size: 1.1rem;
+  color: #f4f4f4;
+  font-weight: 300;
+  text-decoration: none;
+  border-radius: 1rem;
+  border: #1f2c46 1.6px solid;
+}
+
+nav li a:hover {
+  border: #f4f4f4 1.6px solid;
+  border-radius: 1rem;
+  transition: 0.5s;
+  color: #f4f4f4;
+}
+
+nav li a:link {
+  color: #f4f4f4;
+}
+
+nav li a:visited {
+  color: #f4f4f4;
+}
+
+.nav-icons img {
+  height: 22px;
+  justify-items: baseline;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  padding: 0.2rem;
+  border: #1f2c46 1.6px solid;
+  border-radius: 10px;
+}
+
+.nav-icons img:hover {
+  border: #f4f4f4 1.6px solid;
+  border-radius: 10px;
   transition: 0.5s;
 }
 
-.crop {
-  border: 1.5px solid #1f2c46;
-  border-radius: 25px;
-  height: 400px;
-  overflow: hidden;
-}
-
-.crop img {
-  width: 100%;
-  /* margin: 1px 0 0 1px; */
-}
+/* Hero */
 
 #Hero {
   background-color: #1f2c46;
@@ -242,6 +198,23 @@ h5 {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+/* About */
+
+#About ul {
+  padding-inline-start: 20px;
+}
+
+.about-column {
+  text-align: left;
+  width: 45%;
+
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px 10px;
+  background-color: hsl(0, 0%, 90%);
+  border-radius: 10px;
 }
 
 #About {
@@ -259,9 +232,10 @@ h5 {
   border-radius: 25px;
 }
 
-/* 5 columns with Frontend, Backend, Database, Mobile, DevOps */
+/* Skills */
+
 #Skills {
-  background-color: hsl(37, 98%, 53%);
+  background-color: #fda312;
   background-image: linear-gradient(
     0deg,
     hsl(37, 98%, 48%) 0%,
@@ -269,6 +243,38 @@ h5 {
   );
   color: #1f2c46;
 }
+
+.skills-column {
+  background-color: hsl(37, 98%, 63%);
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px 10px;
+  width: 220px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.font-icon {
+  text-align: center;
+  height: 120px;
+  width: 120px;
+  border-radius: 25px;
+  border: 5px solid #1f2c46;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.fa {
+  font-size: 3rem;
+}
+
+/* Projects */
 
 #Projects {
   background-color: hsl(0, 0%, 96%);
@@ -279,6 +285,42 @@ h5 {
   );
   color: #1f2c46;
 }
+
+.projects-column {
+  background-color: hsl(0, 0%, 98%);
+
+  border-radius: 10px;
+  text-align: center;
+  width: 250px;
+  margin-left: auto;
+
+  margin-right: auto;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding: 0px 20px;
+}
+
+.projects-column:hover {
+  transform: scale(1.05);
+  transition: 0.5s;
+}
+
+.crop {
+  border: 1.5px solid #1f2c46;
+  border-radius: 15px;
+  height: 375px;
+  overflow: hidden;
+}
+
+.crop img {
+  width: 100%;
+}
+
+#sky {
+  height: 100%;
+}
+
+/* Contact */
 
 #Contact {
   background-color: #1f2c46;
@@ -291,6 +333,38 @@ h5 {
   color: #f4f4f4;
 }
 
+#Contact hr {
+  border-color: #f4f4f4;
+  border-width: 0.5px;
+  width: 98%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+
+#Contact a {
+  text-decoration: none;
+  color: #f4f4f4;
+}
+
+/* Form */
+
+
+
+.form-email {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+/* Footer */
+
+.button a {
+  color: #f4f4f4;
+  text-decoration: none;
+}
+
+
 footer {
   background-color: #1f2c46;
   background-image: linear-gradient(
@@ -302,12 +376,14 @@ footer {
   text-align: center;
   min-height: 50px;
   padding: 1rem;
+
 }
 
-button {
+.button {
+  display: inline-block;
+  width: 100px;
   background: none;
   color: #f4f4f4;
-  font-size: 300;
   border: 1px solid;
   padding: 1em 2em;
   margin: 10px;
@@ -315,23 +391,15 @@ button {
   transition: color 0.25s, border-color 0.25s, box-shadow 0.25s, transform 0.25s;
 }
 
-button:hover {
-  border-color: #fca311;
-  color: #fca311;
-  box-shadow: 0 0.5em 0.5em -0.4em #fca311;
-  transform: translateY(-0.25em);
+.button:hover {
+  border-color: #f4f4f4;
+  color: #f4f4f4;
+  box-shadow: 0 0.5em 0.5em -0.2em #f4f4f4;
+  transform: translateY(-0.4em);
   cursor: pointer;
 }
 
-hr {
-  border-color: #1f2c46;
-  border-width: 0.5px;
-  width: 98%;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-
-/* CSS Rules for design.html */
+/* For Design.html */
 
 #design {
   color: #1f2c46;
@@ -358,7 +426,6 @@ hr {
 }
 
 /* MEDIA QUERY */
-
 /* TABLET */
 
 @media screen and (max-width: 800px) {
@@ -374,12 +441,19 @@ hr {
 /* MOBILE */
 
 @media screen and (max-width: 600px) {
-  nav a {
-    font-size: 1rem;
+  html {
+    scroll-padding-top: 50px;
+  }
+  nav li a {
+    font-size: 0.9rem;
   }
   .asp {
     padding-left: 0rem;
   }
+  .nav-icons img {
+    height: 16px;
+  }
+
   .row-with-columns {
     flex-flow: column;
   }
