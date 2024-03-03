@@ -314,11 +314,14 @@ font-size: 0.95rem;
     transition: 0.5s;
 }
 
+
+
 .crop {
     border: 1.5px solid #1f2c46;
     border-radius: 15px;
     height: 375px;
     overflow: hidden;
+    margin-bottom: 1rem;
 }
 
 .crop img {
