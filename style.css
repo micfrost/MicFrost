@@ -301,7 +301,7 @@ font-size: 0.95rem;
 
     border-radius: 10px;
     text-align: center;
-    width: 250px;
+    width: 350px;
     margin-left: auto;
 
     margin-right: auto;
@@ -323,13 +323,13 @@ font-size: 0.95rem;
     justify-content: center;  /* horizontal zentrieren, optional */
     border: 1.5px solid #ffffff;
     border-radius: 15px;
-    height: 250px;
+    height: 400px;
     overflow: hidden;
     margin-bottom: 1rem;
 }
 
 .crop img {
-    height: 100%;
+    width: 100%;
 }
 
 #sky {
